@@ -1,7 +1,6 @@
-FROM Python:3-alpine3.15
+FROM python:3-alpine3.15
 WORKDIR /app
-COPY ./app
-RUN pip install python3
+COPY . /app
 CMD ["python3", "try.py"]
 EXPOSE 3000
 CMD python ./try.py
